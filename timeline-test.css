@@ -1,0 +1,154 @@
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 8%;
+    font-family: lato;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+body{
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.wrapper{
+
+    position:relative;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.line-area{
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #262626;
+    position: absolute;
+    top:49%;
+
+}
+
+
+
+.wrapper .timeline-area{
+    height: 100%;
+
+}
+.single-item{
+    width: 10%;
+    
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    margin-right: 70px;
+    transition: width .5s ;
+    z-index: 1;
+}
+
+.single-item > span{
+    height: 32px;
+    
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.single-item > span:before{
+    
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    margin: 0 auto 8px;
+    
+    border-radius: 50%;
+}
+
+.img-area{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -50%;
+    width: 100%;
+}
+
+.img-area a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.img-area a img{
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    border:5px solid #fff;
+}
+
+.img-area a span{
+    position: absolute;
+    width: 250%;
+    margin-left: -72%;
+    bottom: -40%;
+    left: 0;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    color:#000;
+    font-weight: bold;
+}
+
+.step_circle{
+    width: 30px;
+    height: 30px;
+    background: #87CEEB;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid #87CEEB;
+    top: -15px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+.img-area .done-date{
+    top: -20px;
+    left: -5px;
+    color: red;
+}
+
+.img-area a span:after{
+    margin-left: 5px;
+}
+.single-item.active{
+    width: 10%;
+}
+
+.single-item.active .img-area{
+    display: block ;
+}
+
+ 

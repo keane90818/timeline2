@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="timeline-test.css">
+    <script src="timeline-text.js"></script>
+</head>
+<body>
+    <h1> YOUR ORDER TRACKING</h1>
+    <div class="wrapper">
+        
+         <div class="timeline-area">
+            <div class="line-area"></div>
+                <div class="single-item active">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="step_circle icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 12l5 5l10 -10"></path>
+                        </svg>
+                        Payment recieved
+                    </span>
+                    
+                    <div class="img-area">
+                        <a href="#">
+                            <img src="images.png" alt="">
+                            <span>let's go <br><br> <span class="done-date">02/10/2023</span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="step_circle icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 12l5 5l10 -10"></path>
+                        </svg>
+                        Packing completed
+                    </span>
+                    <div class="img-area">
+                        <a href="#">
+                            <img src="images.png" alt="">
+                            <span>Your order packed by Kobe brain <br> Your order checked by Kevin durant <br> <span class="done-date">02/11/2023</span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="single-item">
+                    
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="step_circle icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 6l6 6l-6 6"></path>
+                         </svg>
+                        Passing to delivery</span>
+                    <div class="img-area">
+                        <a href="#">
+                            <img src="images.png" alt="">
+                            
+                            <span>Kobe is passing your order to <br> delivery man <br><span class="done-date">02/12/2023</span></span>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <span>On a way</span>
+                    <div class="img-area">
+                        <a href="#">
+                            <img src="images.png" alt="">
+                            <span >Delivery by Curry Estimated delivery date <br>02/10/2023<span class="done-date">02/13/2023</span>  </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <span>Package recieved</span>
+                    <div class="img-area">
+                        <a href="#">
+                            <img src="images.png" alt="">
+                            <span>Your packages journey <br>finished!!!! <span class="done-date">02/14/2023</span><br> </span>
+                        </a>
+                    </div>
+                </div>
+                
+                
+               
+                
+            
+         </div>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(".wrapper .single-item > span").on("mouseenter mouseleave",function(e){
+            $(".wrapper .single-item.active").removeClass("active");
+             $(this).parent().addClass("active");
+        });
+    </script>
+</body>
+</html>
